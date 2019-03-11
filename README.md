@@ -61,4 +61,6 @@ And enable it in the my.cnf
 To initiate
 ``call schedule_partition_manager``
 
+Check partitions
+``SELECT * FROM information_schema.partitions WHERE TABLE_SCHEMA='database' AND TABLE_NAME = 'tablename' AND PARTITION_NAME IS NOT NULL ;``
 
