@@ -1,5 +1,3 @@
-# Copyright 2015 Yahoo Inc. Licensed under the terms of Apache License 2.0. Please see the LICENSE file for terms.
-
 drop procedure if exists partition_manager;
 
 delimiter ;;
@@ -103,7 +101,7 @@ close cur_table_list;
 
 # confirm schedule for next run
 
-call schedule_partition_manager(); /* 5.6.29+/5.7.11+ only - mysql bug 77288 */
+call schedule_partition_manager(); 
 
 END;;
 DELIMITER ;
