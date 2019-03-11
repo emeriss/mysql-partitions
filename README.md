@@ -53,5 +53,12 @@ buffer      | Seconds worth of empty feature partitions to maintain
 
 Optionally, call `schedule_partition_manager` to update the partitioning schedule based on the new table. This is taken care of during the next run automatically, hence its optional.
 
+Enable the event scheduler 
+``SET GLOBAL event_scheduler = ON;``
+And enable it in the my.cnf 
+``event_scheduler=ENABLED``
+
+To initiate
+``call schedule_partition_manager``
 
 
