@@ -1,4 +1,4 @@
-MySQL Partition Manager
+MySQL Partitions
 =======================
 
 
